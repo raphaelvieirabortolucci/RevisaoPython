@@ -10,4 +10,3 @@ while True:
 
     finally:
         print("Fim da operação.")
-        break

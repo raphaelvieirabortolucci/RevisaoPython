@@ -1,3 +1,8 @@
 while True:
     try:
-        numero =  float(input("Digite um numero"))
+        numero = int(input("digite um numero: "))
+        print(f"seu numero é: {numero}")
+        break
+
+    except ValueError:
+        print("digite apenas numeros! ")
