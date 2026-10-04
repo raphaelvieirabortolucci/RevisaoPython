@@ -20,6 +20,6 @@ while True:
         print("digite um numero inteiro, nada de letras ou numeros com virgulas")
 
     else:
-        numeroQuebrado = numero + 0.5
+        numeroQuebrado = float(numero)
         print(f"valor convertido em {numeroQuebrado}")
         break
