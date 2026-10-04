@@ -45,7 +45,7 @@ while True:
                 break
             except ZeroDivisionError:
                 print("Não é possível dividir por zero!")
-                continuegiut
+                continue
         else:
             print("operador invalido")
             continue    
