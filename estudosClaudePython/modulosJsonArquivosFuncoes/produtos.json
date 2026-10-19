@@ -1,0 +1,123 @@
+
+[
+  {
+    "nome": "Lápis",
+    "preco": 1.5,
+    "qntVendida": 120,
+    "estoque": 80
+  },
+  {
+    "nome": "Caneta azul",
+    "preco": 2.0,
+    "qntVendida": 95,
+    "estoque": 60
+  },
+  {
+    "nome": "Borracha",
+    "preco": 1.0,
+    "qntVendida": 75,
+    "estoque": 100
+  },
+  {
+    "nome": "Apontador",
+    "preco": 2.5,
+    "qntVendida": 48,
+    "estoque": 35
+  },
+  {
+    "nome": "Caderno",
+    "preco": 18.9,
+    "qntVendida": 65,
+    "estoque": 40
+  },
+  {
+    "nome": "Régua",
+    "preco": 3.5,
+    "qntVendida": 32,
+    "estoque": 25
+  },
+  {
+    "nome": "Tesoura",
+    "preco": 8.9,
+    "qntVendida": 28,
+    "estoque": 20
+  },
+  {
+    "nome": "Cola branca",
+    "preco": 4.5,
+    "qntVendida": 41,
+    "estoque": 30
+  },
+  {
+    "nome": "Marca-texto",
+    "preco": 3.9,
+    "qntVendida": 54,
+    "estoque": 45
+  },
+  {
+    "nome": "Papel sulfite",
+    "preco": 28.0,
+    "qntVendida": 37,
+    "estoque": 18
+  },
+  {
+    "nome": "Caneta preta",
+    "preco": 2.0,
+    "qntVendida": 82,
+    "estoque": 55
+  },
+  {
+    "nome": "Caneta vermelha",
+    "preco": 2.0,
+    "qntVendida": 46,
+    "estoque": 35
+  },
+  {
+    "nome": "Estojo",
+    "preco": 15.9,
+    "qntVendida": 23,
+    "estoque": 15
+  },
+  {
+    "nome": "Mochila",
+    "preco": 89.9,
+    "qntVendida": 12,
+    "estoque": 8
+  },
+  {
+    "nome": "Grampeador",
+    "preco": 12.5,
+    "qntVendida": 19,
+    "estoque": 14
+  },
+  {
+    "nome": "Clips",
+    "preco": 3.0,
+    "qntVendida": 31,
+    "estoque": 50
+  },
+  {
+    "nome": "Fita adesiva",
+    "preco": 4.0,
+    "qntVendida": 26,
+    "estoque": 22
+  },
+  {
+    "nome": "Pasta plástica",
+    "preco": 5.5,
+    "qntVendida": 34,
+    "estoque": 28
+  },
+  {
+    "nome": "Corretivo",
+    "preco": 4.5,
+    "qntVendida": 39,
+    "estoque": 27
+  },
+  {
+    "nome": "Lápis de cor",
+    "preco": 14.9,
+    "qntVendida": 21,
+    "estoque": 16
+  }
+]
