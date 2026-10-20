@@ -44,5 +44,5 @@ for i, compra in enumerate(listaCompras, start=1):
     print(f"{i}. {compra['Nome']} x{compra['Quantidade']} ........ R$ {compra['Preço']:.2f}")
 
 print(f"Subtotal: R$ {valorTotal:.2f}")
-print(f"Desconto: R$ {desconto:.2f}")
-print(f"Total a pagar: R$ {valorTotal - desconto:.2f}") 
+print(f"Desconto: R$ {calcularDesconto(valorTotal):.2f}")
+print(f"Total a pagar: R$ {totalAPagar:.2f}") 
