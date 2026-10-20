@@ -1,71 +1,48 @@
 import json
-from funcoes import carregarProd
-from funcoes import exibirProd
-from funcoes import buscarProd
-from funcoes import buscarQnt
-from funcoes import calcularDesconto
+from funcoes import carregarProd, salvarProd, exibirProd, buscarProd, buscarQnt, calcularDesconto
 
+produtos = carregarProd()
 listaCompras = []
-valor = 0
-perguntar = False
+valorTotal = 0
+
 print("Bem vindo a minha papelaria")
 while True:
-    if perguntar == True:
-        print("continuar compras?")
-        resposta = input('Digite "fim" para terminar as compras!').lower().strip()
-        if resposta == "fim":
-            break
-    opcao = input("Monstrar o catalogo de produtos? (digite 'sim' para exibir a lista)"
-    ":")
-
-    if opcao == "sim":
-        exibirProd(carregarProd)
+    if input("Mostrar o catálogo? (sim/nao): ").strip().lower() == "sim":
+        exibirProd(produtos)
 
     while True:
-        
-        buscarProd(carregarProd)
-        
-        if buscarProd == ValueError:
-            print(ValueError)
-            continue  
-
-        else:
-            break
-
-    while True:
-
-        
-        buscarQnt(buscarProd)
-
-        valorTotal = 0
-
-        if buscarQnt == ValueError:
-            print(ValueError)
+        try:
+            produto = buscarProd(produtos)   
+            break                            
+        except ValueError as erro:           
+            print(erro) 
             continue
 
-        
-
-        else:
-            buscarProd["estoque"] -= buscarQnt
-            preco = buscarProd["Preço"] * buscarQnt
-            valorTotal += preco
-
-            compra = {
-                "Nome": buscarProd["nome"],
-                "Quantidade": buscarQnt,
-                "Preço": preco
-            }
-
-            listaCompras.append(compra)
+    while True:
+        try:
+            quantidade = buscarQnt(produto)
             break
-            
-    continue
 
-calcularDesconto()
+        except ValueError as erro:
+            print(erro)
 
-totalAPagar = valorTotal - calcularDesconto
+    produto["estoque"] -= quantidade
+    preco = produto["Preço"] * quantidade
+    valorTotal += preco
+
+    listaCompras.append({"Nome": produto["nome"], "Quantidade": quantidade, "Preço": preco})
+
+    if input('Digite "fim" para terminar (Enter para continuar): ').strip().lower() == "fim":
+        break       
+
+totalAPagar = valorTotal - calcularDesconto(valorTotal)
+salvarProd(produto)
+
 
 print(f"Valor total: {totalAPagar}")
 for i, compra in enumerate(listaCompras, start=1):
     print(f"{i}. {compra['Nome']} x{compra['Quantidade']} ........ R$ {compra['Preço']:.2f}")
 
+print(f"Subtotal: R$ {valorTotal:.2f}")
+print(f"Desconto: R$ {desconto:.2f}")
+print(f"Total a pagar: R$ {valorTotal - desconto:.2f}") 
