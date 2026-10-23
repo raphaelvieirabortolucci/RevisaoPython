@@ -27,7 +27,7 @@ while True:
             print(erro)
 
     produto["estoque"] -= quantidade
-    preco = produto["Preço"] * quantidade
+    preco = produto["preco"] * quantidade
     valorTotal += preco
 
     listaCompras.append({"Nome": produto["nome"], "Quantidade": quantidade, "Preço": preco})
