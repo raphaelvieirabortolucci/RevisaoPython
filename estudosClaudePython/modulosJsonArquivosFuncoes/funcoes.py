@@ -1,4 +1,10 @@
 import json
+from datetime import datetime
+import unicodedata
+
+def semAcento(texto):
+    decomposto = unicodedata.normalize("NFD", texto)
+    return "".join(c for c in decomposto if unicodedata.category(c) != "Mn")
 
 def carregarProd():
 
@@ -30,12 +36,12 @@ def exibirProd(produtos):
         print(f"{produto['nome']} | R$ {produto['preco']:.2f} | Estoque: {produto['estoque']}")
 
 def buscarProd(produtos):
-    nome = input("Digite o produto que você quer: ").strip().lower()
-    for item in produtos:            
-        if item["nome"].lower() == nome:
-            return item           
-  
-    raise ValueError("Produto não encontrado, digite o nome corretamente")   
+    nome = semAcento(input("Digite o produto que você quer: ").strip().lower())
+    for item in produtos:
+        if semAcento(item["nome"].lower()) == nome:
+            return item
+
+    raise ValueError("Produto não encontrado, digite o nome corretamente")  
 
 def buscarQnt(produto):
     try:
@@ -65,4 +71,23 @@ def salvarProd(produtos):
         json.dump(produtos, f, ensure_ascii=False, indent=4)
 
 
-    
+def imprimirRecibo(recibo):
+    agora = datetime.now().strftime("%d/%m/%Y às %H:%M")
+    with open("recibo.txt", "w", encoding="utf-8") as arquivo:
+        arquivo.write(f"Recibo de compra dia: {agora}\n")
+        arquivo.write(recibo)
+
+
+
+def historicoCompras(recibo):
+    agora = datetime.now().strftime("%d/%m/%Y às %H:%M")
+    with open("historico.txt", "a", encoding="utf-8") as arquivo:   # "a" cria se não existir
+        arquivo.write(f"Recibo de {agora}\n")
+        arquivo.write(recibo + "\n\n")
+
+def mostrarHistorico():
+    try:
+        with open("historico.txt", "r", encoding="utf-8") as arquivo:
+            print(arquivo.read())
+    except FileNotFoundError:
+        print("Nenhuma venda registrada.")

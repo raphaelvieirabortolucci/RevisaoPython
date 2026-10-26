@@ -1,122 +1,122 @@
 [
-  {
-    "nome": "Caixa de lápis",
-    "preco": 12.90,
-    "qntVendida": 12,
-    "estoque": 30
-  },
-  {
-    "nome": "Caixa de caneta azul",
-    "preco": 24.90,
-    "qntVendida": 12,
-    "estoque": 20
-  },
-  {
-    "nome": "Pacote de borrachas",
-    "preco": 8.50,
-    "qntVendida": 5,
-    "estoque": 25
-  },
-  {
-    "nome": "Pacote de apontadores",
-    "preco": 15.00,
-    "qntVendida": 10,
-    "estoque": 12
-  },
-  {
-    "nome": "Caderno",
-    "preco": 18.90,
-    "qntVendida": 1,
-    "estoque": 40
-  },
-  {
-    "nome": "Pacote de réguas",
-    "preco": 18.00,
-    "qntVendida": 6,
-    "estoque": 15
-  },
-  {
-    "nome": "Tesoura",
-    "preco": 8.90,
-    "qntVendida": 1,
-    "estoque": 20
-  },
-  {
-    "nome": "Caixa de cola branca",
-    "preco": 36.00,
-    "qntVendida": 12,
-    "estoque": 8
-  },
-  {
-    "nome": "Pacote de marca-textos",
-    "preco": 19.90,
-    "qntVendida": 6,
-    "estoque": 18
-  },
-  {
-    "nome": "Pacote de papel sulfite",
-    "preco": 28.00,
-    "qntVendida": 500,
-    "estoque": 35
-  },
-  {
-    "nome": "Caixa de caneta preta",
-    "preco": 24.90,
-    "qntVendida": 12,
-    "estoque": 16
-  },
-  {
-    "nome": "Caixa de caneta vermelha",
-    "preco": 24.90,
-    "qntVendida": 12,
-    "estoque": 14
-  },
-  {
-    "nome": "Estojo",
-    "preco": 15.90,
-    "qntVendida": 1,
-    "estoque": 15
-  },
-  {
-    "nome": "Mochila",
-    "preco": 89.90,
-    "qntVendida": 1,
-    "estoque": 8
-  },
-  {
-    "nome": "Caixa de grampos",
-    "preco": 6.50,
-    "qntVendida": 1000,
-    "estoque": 20
-  },
-  {
-    "nome": "Caixa de clips",
-    "preco": 5.90,
-    "qntVendida": 100,
-    "estoque": 25
-  },
-  {
-    "nome": "Rolo de fita adesiva",
-    "preco": 4.00,
-    "qntVendida": 1,
-    "estoque": 22
-  },
-  {
-    "nome": "Pacote de pastas plásticas",
-    "preco": 25.00,
-    "qntVendida": 10,
-    "estoque": 10
-  },
-  {
-    "nome": "Caixa de corretivos",
-    "preco": 27.00,
-    "qntVendida": 6,
-    "estoque": 9
-  },
-  {
-    "nome": "Caixa de lápis de cor",
-    "preco": 14.90,
-    "qntVendida": 12,
-    "estoque": 16
-  }
+    {
+        "nome": "Caixa de lápis",
+        "preco": 12.9,
+        "qntVendida": 12,
+        "estoque": 25
+    },
+    {
+        "nome": "Caixa de caneta azul",
+        "preco": 24.9,
+        "qntVendida": 12,
+        "estoque": 20
+    },
+    {
+        "nome": "Pacote de borrachas",
+        "preco": 8.5,
+        "qntVendida": 5,
+        "estoque": 25
+    },
+    {
+        "nome": "Pacote de apontadores",
+        "preco": 15.0,
+        "qntVendida": 10,
+        "estoque": 12
+    },
+    {
+        "nome": "Caderno",
+        "preco": 18.9,
+        "qntVendida": 1,
+        "estoque": 38
+    },
+    {
+        "nome": "Pacote de réguas",
+        "preco": 18.0,
+        "qntVendida": 6,
+        "estoque": 15
+    },
+    {
+        "nome": "Tesoura",
+        "preco": 8.9,
+        "qntVendida": 1,
+        "estoque": 20
+    },
+    {
+        "nome": "Caixa de cola branca",
+        "preco": 36.0,
+        "qntVendida": 12,
+        "estoque": 8
+    },
+    {
+        "nome": "Pacote de marca-textos",
+        "preco": 19.9,
+        "qntVendida": 6,
+        "estoque": 18
+    },
+    {
+        "nome": "Pacote de papel sulfite",
+        "preco": 28.0,
+        "qntVendida": 500,
+        "estoque": 35
+    },
+    {
+        "nome": "Caixa de caneta preta",
+        "preco": 24.9,
+        "qntVendida": 12,
+        "estoque": 16
+    },
+    {
+        "nome": "Caixa de caneta vermelha",
+        "preco": 24.9,
+        "qntVendida": 12,
+        "estoque": 14
+    },
+    {
+        "nome": "Estojo",
+        "preco": 15.9,
+        "qntVendida": 1,
+        "estoque": 15
+    },
+    {
+        "nome": "Mochila",
+        "preco": 89.9,
+        "qntVendida": 1,
+        "estoque": 6
+    },
+    {
+        "nome": "Caixa de grampos",
+        "preco": 6.5,
+        "qntVendida": 1000,
+        "estoque": 20
+    },
+    {
+        "nome": "Caixa de clips",
+        "preco": 5.9,
+        "qntVendida": 100,
+        "estoque": 25
+    },
+    {
+        "nome": "Rolo de fita adesiva",
+        "preco": 4.0,
+        "qntVendida": 1,
+        "estoque": 22
+    },
+    {
+        "nome": "Pacote de pastas plásticas",
+        "preco": 25.0,
+        "qntVendida": 10,
+        "estoque": 10
+    },
+    {
+        "nome": "Caixa de corretivos",
+        "preco": 27.0,
+        "qntVendida": 6,
+        "estoque": 9
+    },
+    {
+        "nome": "Caixa de lápis de cor",
+        "preco": 14.9,
+        "qntVendida": 12,
+        "estoque": 13
+    }
 ]

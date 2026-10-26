@@ -1,5 +1,4 @@
-import json
-from funcoes import carregarProd, salvarProd, exibirProd, buscarProd, buscarQnt, calcularDesconto
+from funcoes import carregarProd, salvarProd, exibirProd, buscarProd, buscarQnt, calcularDesconto, imprimirRecibo, historicoCompras, mostrarHistorico
 
 produtos = carregarProd()
 listaCompras = []
@@ -16,7 +15,6 @@ while True:
             break                            
         except ValueError as erro:           
             print(erro) 
-            continue
 
     while True:
         try:
@@ -35,14 +33,20 @@ while True:
     if input('Digite "fim" para terminar (Enter para continuar): ').strip().lower() == "fim":
         break       
 
-totalAPagar = valorTotal - calcularDesconto(valorTotal)
-salvarProd(produto)
 
+desconto = calcularDesconto(valorTotal)
+totalAPagar = valorTotal - desconto
+salvarProd(produtos)
 
-print(f"Valor total: {totalAPagar}")
+linhas = []
 for i, compra in enumerate(listaCompras, start=1):
-    print(f"{i}. {compra['Nome']} x{compra['Quantidade']} ........ R$ {compra['Preço']:.2f}")
+    linhas.append(f"{i}. {compra['Nome']} x{compra['Quantidade']} ........ R$ {compra['Preço']:.2f}")
+linhas.append(f"Subtotal: R$ {valorTotal:.2f}")
+linhas.append(f"Desconto: R$ {desconto:.2f}")
+linhas.append(f"Total a pagar: R$ {totalAPagar:.2f}")
+recibo = "\n".join(linhas)      # lista de linhas → UM texto
 
-print(f"Subtotal: R$ {valorTotal:.2f}")
-print(f"Desconto: R$ {calcularDesconto(valorTotal):.2f}")
-print(f"Total a pagar: R$ {totalAPagar:.2f}") 
+print(recibo)
+imprimirRecibo(recibo)
+historicoCompras(recibo)
+mostrarHistorico()
